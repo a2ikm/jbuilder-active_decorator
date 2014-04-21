@@ -8,13 +8,12 @@ Gem::Specification.new do |spec|
   spec.version       = Jbuilder::ActiveDecorator::VERSION
   spec.authors       = ["Masato Ikeda"]
   spec.email         = ["masato.ikeda@gmail.com"]
-  spec.summary       = %q{TODO: Write a short summary. Required.}
-  spec.description   = %q{TODO: Write a longer description. Optional.}
-  spec.homepage      = ""
+  spec.summary       = %q{Prevent ActiveDecorator from decorating Jbuilder objects.}
+  spec.description   = %q{Prevent ActiveDecorator from decorating Jbuilder objects. If not, it generates unexpected keys like `nil?` and/or `class`.}
+  spec.homepage      = "https://github.com/a2ikm/jbuilder-active_decorator"
   spec.license       = "MIT"
 
   spec.files         = `git ls-files -z`.split("\x0")
-  spec.executables   = spec.files.grep(%r{^bin/}) { |f| File.basename(f) }
   spec.test_files    = spec.files.grep(%r{^(test|spec|features)/})
   spec.require_paths = ["lib"]
 
