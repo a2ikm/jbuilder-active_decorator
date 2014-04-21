@@ -1,12 +1,14 @@
 # Jbuilder::ActiveDecorator
 
-TODO: Write a gem description
+Prevent [ActiveDecorator](http://rubygems.org/gems/active_decorator) from
+decorating [Jbuilder](http://rubygems.org/gems/jbuilder) objects. If not,
+it generates unexpected keys like `nil?` and/or `class`.
 
 ## Installation
 
 Add this line to your application's Gemfile:
 
-    gem 'jbuilder-active_decorator'
+    gem 'jbuilder-active_decorator', require: 'jbuilder/active_decorator'
 
 And then execute:
 
@@ -15,10 +17,6 @@ And then execute:
 Or install it yourself as:
 
     $ gem install jbuilder-active_decorator
-
-## Usage
-
-TODO: Write usage instructions here
 
 ## Contributing
 
